@@ -1,0 +1,23 @@
+python main/work.py \
+    --dataset_name 'AAPD' \
+    --train_data_path 'AAPD/train.json' \
+    --val_data_path 'AAPD/val.json' \
+    --test_data_path 'AAPD/test.json' \
+    --tokenizer_name 'plm/roberta' \
+    --bert_name 'plm/roberta' \
+    --label_detail 'AAPD/label_detail.json' \
+    --device 'cuda:0' \
+    --epoch 100 \
+    --batch_size 64 \
+    --max_length 384 \
+    --dropout 0.5 \
+    --learning_rate 0.00005 \
+    --weight_decay 0.05 \
+    --temperature 0.05 \
+    --current 'train' \
+    --count 3 \
+    --num_labels 54 \
+    --if_loss_count 'false' \
+    --label_dim 54 \
+    --emb_size 1024 \
+    --result_path 'AAPD'
